@@ -17,6 +17,7 @@ body {
   border-radius: 0 0 12px 12px;
   position: relative;
   padding-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 .top-inform::before {
@@ -139,6 +140,8 @@ body {
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .title-trust {
@@ -238,6 +241,213 @@ body {
     overflow: hidden;
   }
   .companies-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.slider-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: rgb(245, 245, 250);
+}
+.slide img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.slide-link {
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(36, 163, 255);
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.slide-link::after {
+  content: url(../images/img4.png);
+  padding-left: 2px;
+}
+
+.slide-text {
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 30px;
+  margin: 0;
+}
+
+.slide-author {
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 16px;
+  color: rgb(179, 179, 186);
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 6px;
+}
+
+.slide-author + p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(179, 179, 186);
+  margin: 0;
+}
+
+.slide-content {
+  padding: 30px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  margin-top: 30px;
+}
+
+.slider-pagination {
+  height: 16px;
+  width: 16px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(36, 163, 255, 0.2);
+}
+.slider-pagination-active {
+  background-color: rgb(36, 163, 255);
+}
+
+@media (min-width: 768px) {
+  .slide-text {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  .slide {
+    flex-direction: row;
+  }
+  .slide img {
+    width: 400px;
+    height: 528px;
+  }
+}
+@media (min-width: 1440px) {
+  .slide img {
+    height: 344px;
+  }
+}
+@media (min-width: 1920px) {
+  .slider-wrapper {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.wrapper-publications {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  background-color: rgb(245, 245, 250);
+}
+
+.publications {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(400px, auto));
+  gap: 30px;
+}
+.publications-title {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.publication {
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+.publication img {
+  display: block;
+  width: 100%;
+  height: 315px;
+  object-fit: cover;
+}
+
+.publication-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+}
+.publication-content hr {
+  height: 4px;
+  width: 100%;
+  background-color: rgb(230, 230, 240);
+  border: none;
+  margin: 0;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgb(36, 163, 255);
+  margin: 0;
+}
+
+.card-date {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(179, 179, 186);
+}
+
+.card-content {
+  font-weight: 4700;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .publications {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(400px, auto));
+  }
+  .publication:nth-child(3) {
+    grid-column: 1/-1;
+  }
+  .publications-title {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .publications {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(400px, auto);
+  }
+  .publication:nth-child(3) {
+    grid-column: 3/4;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper-publications {
+    width: 1600px;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
   }
