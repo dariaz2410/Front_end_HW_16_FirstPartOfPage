@@ -69,6 +69,14 @@ margin-bottom: 52px;
     content: url(../images/img1.png);
 }
 
+.services:hover {
+    color: rgba(240, 20, 90, 1);
+}
+
+.services:hover::after{
+    content: url(../images/img8.png);
+}
+
 .imgBlock {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 24px;
@@ -137,13 +145,6 @@ margin-bottom: 52px;
 }
 
 @media (min-width: 1920px) {
-    .services {
-        color: rgba(240, 20, 90, 1);
-    }
-
-    .services::after{
-        content: url(../images/img2.png);
-    }
     .wrapper-advantage{
         width: 1600px;
         margin-left: auto;
