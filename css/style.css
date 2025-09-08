@@ -471,6 +471,10 @@ body {
   .slide-text {
     font-size: 38px;
   }
+  .slider-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 @media (min-width: 1024px) {
   .slide {
@@ -575,6 +579,10 @@ body {
   }
   .publications-title {
     margin-top: 10px;
+  }
+  .wrapper-publications {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (min-width: 1024px) {
@@ -970,6 +978,10 @@ footer {
   .footer-point::before {
     content: url(../images/img14.png);
     padding-right: 10px;
+  }
+  .footer-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (min-width: 1920px) {
